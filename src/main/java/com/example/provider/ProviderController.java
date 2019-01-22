@@ -21,22 +21,22 @@ public class ProviderController {
                     "    \"secondSurname\":\"Garcia\",\n" +
                     "    \"gender\": \"male\",\n" +
                     "    \"medicalHistory\":\"XDSSI\",\n" +
-                    "    \"VIP\" : false\"\n" +
+                    "    \"VIP\": false\n" +
                     "  },\n" +
                     "  \"visitStatus\": \"scheduled\",\n" +
                     "  \"scheduledTime\": \"2010-06-15T00:00:00\",\n" +
                     "  \"arrivalTime\": \"2010-06-15T02:00:00\",\n" +
                     "  \"agenda\": \"XDD\",\n" +
                     "  \"center\": \"Moraleja\",\n" +
-                    "  \"resource\": \"EF\",\n" +
+                    "  \"resource\": \"EF Maria Gimenez Navarro\",\n" +
                     "  \"service\": \"enfermeria\",\n" +
                     "  \"visitType\": \"revision\",\n" +
+                    "  \"comments\": \"Ha sufrido anteriormente de neumonia\",\n" +
                     "  \"insurance\": \"Sanitas SA\",\n" +
-                    "  \"observation\": \"Ha sufrido anteriormente de neumonia\",\n" +
                     "  \"visitChannel\": \"videollamada\",\n" +
                     "  \"overload\": false\n" +
                     "}");
         }
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No hay cita con ese codigo");
+        return ResponseEntity.status(404).body("No hay cita con ese codigo");
     }
 }
